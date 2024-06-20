@@ -1,2 +1,2 @@
 #!/bin/bash
-docker build -t 240619-experiment-1 .
+docker build -t my-image .
