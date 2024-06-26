@@ -28,7 +28,11 @@ To do this, you must execute the following command
 
 Once you have successfully transfered the built container image to diana, we can run the experiment in the HPC. 
 
-To do this, you need a shell script for your HPC job. An example of this script is in run.sh in the scripts folder. 
+First let's login to the control node (diana) via, make sure you are connected to the ACFR or usyd wifi. If you are connecting remotely please use the VPN. 
+
+`ssh <acfr_username>@diana.acfr.usyd.edu.au`
+
+Once you have logged into diana, you need a shell script for your HPC job. An example of this script is in run.sh in the scripts folder. Make a run.sh similar to this with parameters that suits your experiment. Pay special attention to GPU params, container-iamge and container-mounts parameters. Once you have these finalised, you can put your commands at the end of the file relating to your experiment that needs to run inside of the container.  
 
 To run the experiment, first make the script an executable using the following command 
 
