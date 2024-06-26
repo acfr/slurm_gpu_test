@@ -24,11 +24,11 @@
 #SBATCH --output=serial_test_%j.log
 #
 #
-## change the cotnainer name to your containers name
+## change the container name to your containers name
 #SBATCH --container-image=centos
 #
-## change the cotnainer mounts to point to the places you would like to access data to/from.
-#SBATCH --container-mounts=~/slurm_gput_test/data/data_in:/data/data_in.~/slurm_gput_test/data/data_out:/data/data_out
+## change the container mounts to point to the places you would like to access data to/from.
+#SBATCH --container-mounts=~/slurm_gpu_test/data/data_in:/data/data_in.~/slurm_gpu_test/data/data_out:/data/data_out
 #
 ## Command(s) to run inside your container(example):
 CURRENT_UID=$(id -u):$(id -g) 

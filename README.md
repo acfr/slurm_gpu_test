@@ -16,7 +16,9 @@ curl -fSsL -O https://github.com/NVIDIA/enroot/releases/download/v3.5.0/enroot_3
 sudo apt install -y ./enroot_3.5.0-1_${arch}.deb
 ```
 
-Once installed, we can go ahead and execute the export.sh file inside of the scripts folder.
+Once installed, we can go ahead and execute the following command to conver the docker image into a .sqsh file type.
+
+`enroot import dockerd://your_image_name`
 
 Once the .sqsh file is ready, we need to copy this to our SLURM control node (diana.acfr.usyd.edu.au) via scp. 
 
