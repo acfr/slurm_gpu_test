@@ -40,7 +40,7 @@ To run the experiment, first make the script an executable using the following c
  
 Then run it using 
 
-`sbatch run.sh`
+`sbatch -w hades run.sh`
 
 A log file will be created in the directory where run.sh is located wich will be named like this 
 
