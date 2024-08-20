@@ -46,6 +46,13 @@ A log file will be created in the directory where run.sh is located wich will be
 
 `serial_test_jobnumber.log`
 
+To check what jobs are in the queue you can execute 
+
+`squeue`
+
+To check the status of past and current jobs you can execute 
+
+`sacct`
 
 #### Other useful commands to know
 ```bash
