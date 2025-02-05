@@ -20,20 +20,20 @@
 # Processors per task:
 #SBATCH --cpus-per-task=1
 #
-#SBATCH --gpus-per-node=H100:2
+#SBATCH --gres=H100:2
 #
 # Standard output and error log
 #SBATCH --output=serial_test_%j.log
 #
 #
 ## change the container name to your containers name
-#SBATCH --container-image ./my-image.sqsh
+#SBATCH --container-image=ubuntu:22.04
 #
 ## change the container mounts to point to the places you would like to access data to/from.
 # SBATCH --container-mounts=~/slurm_gpu_test/data/data_in:/data/data_in,~/slurm_gpu_test/data/data_out:/data/data_out,~/slurm_gpu_test/src/:/slurm_gpu_test/src/
 #
 ## Command(s) to run inside your container(example):
 
+pwd
+hostname
 nvidia-smi
-# python3 ../src/train.py
-
