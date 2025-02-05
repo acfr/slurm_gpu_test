@@ -3,7 +3,7 @@
 #SBATCH --job-name=my_test
 #
 # Partition - This is the queue it goes in:
-#SBATCH --partition=hades
+#SBATCH --partition=hpc
 #
 # Where to send email (optional). Replace the username with yours.
 #SBATCH --mail-user=jjustin@acfr.usyd.edu.au
